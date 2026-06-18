@@ -1,10 +1,30 @@
+const WHATSAPP_NUMBER = "7471234567";
+document.documentElement.classList.add("js");
+const WHATSAPP_MESSAGE = "Hola, quiero información de Mr.O Papelería";
+
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const mobilePanel = document.querySelector("[data-mobile-panel]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 const revealItems = document.querySelectorAll(".reveal");
 const currentYearItems = document.querySelectorAll("[data-current-year]");
+const whatsappLinks = document.querySelectorAll("[data-whatsapp]");
+const quoteLinks = document.querySelectorAll("[data-whatsapp-quote]");
 const images = document.querySelectorAll("img");
-const sections = Array.from(document.querySelectorAll("main section[id]"));
+const sections = Array.from(document.querySelectorAll("main section[id], footer[id]"));
+
+const whatsappUrl = (message = WHATSAPP_MESSAGE) =>
+  `https://wa.me/52${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+whatsappLinks.forEach((link) => {
+  link.href = whatsappUrl();
+});
+
+quoteLinks.forEach((link) => {
+  const message = link.href.includes("p%C3%A1ginas") || link.textContent.toLowerCase().includes("planes")
+    ? "Hola, quiero ver planes de páginas web"
+    : "Hola, quiero cotizar diseño para mi negocio";
+  link.href = whatsappUrl(message);
+});
 
 const setMenu = (isOpen) => {
   if (!menuToggle || !mobilePanel) return;
@@ -29,12 +49,6 @@ document.addEventListener("keydown", (event) => {
 
 images.forEach((image) => {
   image.addEventListener("error", () => {
-    const fallback = image.dataset.fallback;
-    if (fallback && !image.src.endsWith(fallback)) {
-      image.src = fallback;
-      image.removeAttribute("srcset");
-      return;
-    }
     image.style.visibility = "hidden";
   });
 });
@@ -48,11 +62,11 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.14, rootMargin: "0px 0px -24px 0px" }
+    { threshold: 0.12, rootMargin: "0px 0px -28px 0px" }
   );
 
   revealItems.forEach((item, index) => {
-    item.style.setProperty("--reveal-delay", `${Math.min(index % 3, 2) * 30}ms`);
+    item.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 35}ms`);
     revealObserver.observe(item);
   });
 
@@ -72,7 +86,7 @@ if ("IntersectionObserver" in window) {
         });
       });
     },
-    { threshold: 0.42 }
+    { threshold: 0.35 }
   );
 
   sections.forEach((section) => navObserver.observe(section));

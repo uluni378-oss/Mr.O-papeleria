@@ -1,0 +1,12 @@
+{
+  "proyecto": "Mr.O Papelería",
+  "version": "v2_alta_calidad",
+  "objetivo": "Assets optimizados para que Codex acerque la homepage al mockup aprobado.",
+  "fuentes": {
+    "mockup_aprobado_homepage": "assets/img/reference/mockup-aprobado-homepage-completo.png",
+    "mockup_top_aprobado": "assets/img/reference/mockup-aprobado-top.png",
+    "captura_actual_error": "assets/img/reference/pagina-actual-no-igual.png",
+    "collage_fuente": "assets/img/reference/collage-fuente-assets.png"
+  },
+  "nota": "Los archivos fueron recortados y reescalados desde el mockup aprobado; no son fotografía física real de la tienda, pero están preparados como assets web de mayor tamaño para implementación visual."
+}
