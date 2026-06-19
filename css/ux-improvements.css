@@ -1,0 +1,102 @@
+/* UX Improvements */
+
+/* Sticky Header Shadow */
+.site-header {
+  position: fixed !important; /* Force fixed positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.98);
+}
+
+/* Fix main content padding to account for fixed header */
+main {
+  padding-top: 82px;
+}
+
+/* Smooth transitions for interactive elements */
+.category-card,
+.quick-card,
+.business-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover,
+.quick-card:hover,
+.business-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 157, 186, 0.15);
+}
+
+/* Button smooth hover */
+.btn {
+  transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Map frame responsive adjustments */
+.map-frame {
+  height: 350px !important;
+  transition: box-shadow 0.3s ease;
+}
+.map-frame:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .map-frame {
+    height: 250px !important;
+  }
+}
+
+/* Animaciones sutiles para el section-head */
+.section-head h2 {
+  position: relative;
+  display: inline-block;
+}
+.section-head h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: var(--mro-cyan, #009DBA);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+.section:hover .section-head h2::after {
+  width: 100px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  padding: 10px 14px;
+  background: #061B2E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  transform: translateY(-160%);
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}

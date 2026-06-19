@@ -1,6 +1,6 @@
-const WHATSAPP_NUMBER = "7471234567";
+const WHATSAPP_NUMBER = "527471013037";
 document.documentElement.classList.add("js");
-const WHATSAPP_MESSAGE = "Hola, quiero información de Mr.O Papelería";
+const WHATSAPP_MESSAGE = "Hola, quiero información sobre los servicios de Mr.O Papelería.";
 
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const mobilePanel = document.querySelector("[data-mobile-panel]");
@@ -11,17 +11,18 @@ const whatsappLinks = document.querySelectorAll("[data-whatsapp]");
 const quoteLinks = document.querySelectorAll("[data-whatsapp-quote]");
 const images = document.querySelectorAll("img");
 const sections = Array.from(document.querySelectorAll("main section[id], footer[id]"));
+const webCards = document.querySelectorAll(".web-gallery-card");
 
 const whatsappUrl = (message = WHATSAPP_MESSAGE) =>
-  `https://wa.me/52${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
 whatsappLinks.forEach((link) => {
-  link.href = whatsappUrl();
+  link.href = whatsappUrl(link.dataset.message || WHATSAPP_MESSAGE);
 });
 
 quoteLinks.forEach((link) => {
   const message = link.href.includes("p%C3%A1ginas") || link.textContent.toLowerCase().includes("planes")
-    ? "Hola, quiero ver planes de páginas web"
+    ? "Hola, quiero cotizar una página web"
     : "Hola, quiero cotizar diseño para mi negocio";
   link.href = whatsappUrl(message);
 });
@@ -90,10 +91,36 @@ if ("IntersectionObserver" in window) {
   );
 
   sections.forEach((section) => navObserver.observe(section));
+
+  const webCardsObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.18 }
+  );
+
+  webCards.forEach((card) => {
+    webCardsObserver.observe(card);
+  });
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
+  webCards.forEach((card) => card.classList.add("is-visible"));
 }
 
 currentYearItems.forEach((item) => {
   item.textContent = new Date().getFullYear();
 });
+
+// Sticky Header Logic
+const siteHeader = document.querySelector(".site-header");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    siteHeader?.classList.add("is-scrolled");
+  } else {
+    siteHeader?.classList.remove("is-scrolled");
+  }
+}, { passive: true });

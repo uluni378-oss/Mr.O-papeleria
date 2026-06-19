@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mr.O Papelería | Escuela &amp; Oficina en Chilpancingo</title>
-    <meta name="description" content="Papelería en Chilpancingo con útiles escolares, oficina, copias, impresiones, trámites, diseño para negocios y páginas web informativas." />
-    <meta property="og:title" content="Mr.O Papelería | Todo para escuela, oficina y negocios locales" />
-    <meta property="og:description" content="Papelería, escuela, oficina, copias, impresiones, trámites y diseño para negocios locales en Chilpancingo." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/img/logo-mro.png" />
-    <meta name="theme-color" content="#009DBA" />
-    <link rel="icon" href="./assets/img/logo-mro.png" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Mr.O Papelería | Escuela, oficina, copias e impresiones</title>
+
+  <meta
+    name="description"
+    content="Papelería, copias, impresiones, artículos escolares, oficina, diseño gráfico y páginas web en Chilpancingo."
+  >
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/ux-improvements.css">
+  <link rel="stylesheet" href="./css/location.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mr.O Papelería",
+    "description": "Papelería, copias e impresiones en Chilpancingo. Artículos escolares, oficina, diseño gráfico y páginas web.",
+    "email": "mropapeleria@gmail.com",
+    "telephone": "+527471013037",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Blvd. Vicente Guerrero 8L, Col. Salubridad",
+      "addressLocality": "Chilpancingo",
+      "addressRegion": "Guerrero",
+      "addressCountry": "MX"
+    },
+    "makesOffer": [
       {
-        "@context": "https://schema.org",
-        "@type": ["LocalBusiness", "Store"],
-        "additionalType": "https://schema.org/OfficeEquipmentStore",
-        "name": "Mr.O Papelería",
-        "description": "Papelería en Chilpancingo con útiles escolares, oficina, copias, impresiones, trámites, diseño para negocios y páginas web informativas.",
-        "email": "mropapeleria@gmail.com",
-        "telephone": "+527471234567",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Blvd. Vicente Guerrero 8L, Col. Salubridad",
-          "addressLocality": "Chilpancingo",
-          "addressRegion": "Guerrero",
-          "addressCountry": "MX"
-        },
-        "sameAs": ["https://www.facebook.com/MrOPapeleria"]
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Copias e impresiones"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Papelería escolar y de oficina"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Diseño gráfico y branding"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Páginas web"
+        }
       }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    ],
+    "sameAs": [
+      "https://www.facebook.com/MrOPapeleria"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
 
     <header class="site-header">
       <div class="container nav-bar">
         <a class="brand" href="#inicio" aria-label="Ir al inicio de Mr.O Papelería">
-          <img src="./assets/img/logo-mro.png" alt="Logotipo de Mr.O Papelería" />
+          <img src="./assets/img/logo-mro.jpg" alt="Logotipo de Mr.O Papelería" />
         </a>
         <nav class="desktop-nav" aria-label="Navegación principal">
           <a href="#inicio" data-nav-link>Inicio</a>
@@ -49,7 +88,7 @@
           <a href="#ubicacion" data-nav-link>Ubicación</a>
           <a href="#contacto" data-nav-link>Contacto</a>
         </nav>
-        <a class="btn btn--small btn--dark" href="https://wa.me/527471234567?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Mr.O%20Papeler%C3%ADa" target="_blank" rel="noopener" data-whatsapp>WhatsApp</a>
+        <a class="btn btn--small btn--dark" href="https://wa.me/527471013037" target="_blank" rel="noopener noreferrer" data-whatsapp data-message="Hola, necesito información sobre copias o artículos de papelería.">WhatsApp</a>
         <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
           <span></span>
           <span></span>
@@ -69,15 +108,15 @@
       </div>
     </header>
 
-    <main id="contenido">
+    <main id="contenido-principal">
       <section class="hero" id="inicio">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Mr.O Papelería · Escuela &amp; Oficina</p>
-            <h1>TODO LO QUE NECESITAS,<br /><span>EN UN SOLO LUGAR.</span></h1>
-            <p class="hero-lead">Papelería, escuela, oficina, copias, impresiones, trámites y diseño para negocios locales.</p>
+            <p class="eyebrow">Mr.O Papelería · Chilpancingo</p>
+            <h1>TU CENTRO DE<br /><span>IMPRESIÓN Y PAPELERÍA.</span></h1>
+            <p class="hero-lead">Papelería, copias e impresiones al instante. Además, impulsamos tu negocio con diseño gráfico, branding y páginas web.</p>
             <div class="actions">
-              <a class="btn btn--primary" href="https://wa.me/527471234567?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Mr.O%20Papeler%C3%ADa" target="_blank" rel="noopener" data-whatsapp>Escríbenos por WhatsApp</a>
+              <a class="btn btn--primary" href="https://wa.me/527471013037" target="_blank" rel="noopener noreferrer" data-whatsapp data-message="Hola, quiero enviar unos archivos para imprimir / cotizar material de papelería.">Enviar archivos a imprimir</a>
               <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
             </div>
           </div>
@@ -88,62 +127,68 @@
         <div class="hero-wave" aria-hidden="true"></div>
       </section>
 
-      <section class="section categories">
+      <section class="section categories" id="servicios">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Servicios principales</p>
             <h2>Elige lo que necesitas resolver hoy.</h2>
           </div>
-          <div class="category-grid" id="papeleria">
+          <div class="category-grid">
             <article class="category-card reveal">
-              <div class="category-art"><img src="./assets/img/escuela.webp" alt="Material escolar" /></div>
-              <div class="category-icon">E</div>
-              <h3>Escuela</h3>
+              <div class="category-art"><img src="./assets/img/copias-impresiones.webp" alt="Copias, impresiones y escaneo" loading="lazy" /></div>
+              <div class="category-icon">C</div>
+              <h3>Copias e impresiones</h3>
+              <p>Copias, impresiones y escaneo de alta calidad.</p>
+            </article>
+            <article class="category-card reveal">
+              <div class="category-art"><img src="./assets/img/escuela.webp" alt="Material escolar" loading="lazy" /></div>
+              <div class="category-icon">P</div>
+              <h3>Papelería escolar</h3>
               <p>Todo para tus clases y proyectos.</p>
             </article>
             <article class="category-card reveal">
-              <div class="category-art"><img src="./assets/img/oficina.webp" alt="Material de oficina" /></div>
+              <div class="category-art"><img src="./assets/img/oficina.webp" alt="Servicios de oficina" loading="lazy" /></div>
               <div class="category-icon">O</div>
-              <h3>Oficina</h3>
+              <h3>Servicios de oficina</h3>
               <p>Material de oficina y accesorios.</p>
             </article>
             <article class="category-card reveal">
-              <div class="category-art"><img src="./assets/img/copias-impresiones.webp" alt="Copias, impresiones y escaneo" /></div>
-              <div class="category-icon">C</div>
-              <h3>Copias e impresiones</h3>
-              <p>Copias, impresiones y escaneo.</p>
-            </article>
-            <article class="category-card reveal">
-              <div class="category-art"><img src="./assets/img/tramites.webp" alt="Tramites y documentos" /></div>
-              <div class="category-icon">T</div>
-              <h3>Trámites</h3>
-              <p>Trámites y documentos al momento.</p>
-            </article>
-            <article class="category-card reveal">
-              <div class="category-art"><img src="./assets/img/diseno-grafico.webp" alt="Diseno grafico para negocios" /></div>
+              <div class="category-art"><img src="./assets/img/diseno-grafico.webp" alt="Diseño gráfico" loading="lazy" /></div>
               <div class="category-icon">D</div>
               <h3>Diseño gráfico</h3>
-              <p>Logotipos, tarjetas, lonas y más.</p>
+              <p>Lonas, tarjetas, volantes y publicidad.</p>
             </article>
             <article class="category-card reveal">
-              <div class="category-art"><img src="./assets/img/paginas-web.webp" alt="Paginas web informativas" /></div>
+              <div class="category-art"><img src="./assets/img/tramites.webp" alt="Branding e Identidad de marca" loading="lazy" /></div>
+              <div class="category-icon">B</div>
+              <h3>Branding</h3>
+              <p>Identidad de marca y logotipos.</p>
+            </article>
+            <article class="category-card reveal">
+              <div class="category-art"><img src="./assets/img/paginas-web.webp" alt="Diseño web" loading="lazy" /></div>
               <div class="category-icon">W</div>
-              <h3>Páginas web</h3>
+              <h3>Diseño web</h3>
               <p>Tu negocio en línea con diseño profesional.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="school-season">
-        <div class="container season-grid">
-          <div class="season-copy reveal">
-            <p class="season-title">TEMPORADA<br /><span>ESCOLAR</span></p>
+      <section class="school-season" id="papeleria">
+        <div class="school-season-bg" aria-hidden="true">
+          <img src="./assets/img/temporada-escolar-fondo.svg" alt="" />
+        </div>
+
+        <div class="school-season-overlay" aria-hidden="true"></div>
+
+        <div class="school-season-inner">
+          <div class="school-season-copy reveal">
+            <h2><span>TEMPORADA</span> ESCOLAR</h2>
             <p>Encuentra todo para este regreso a clases.</p>
-            <a class="btn btn--primary btn--yellow" href="#papeleria">Ver productos</a>
+            <a href="./productos-escolares.html" class="school-season-button">Ver productos</a>
           </div>
-          <div class="season-collage reveal"><img src="./assets/img/temporada-escolar.webp" alt="Utiles escolares para regreso a clases" /></div>
-          <ul class="season-checks reveal">
+
+          <ul class="school-season-list reveal">
             <li>Cuadernos</li>
             <li>Colores</li>
             <li>Lápices</li>
@@ -180,10 +225,11 @@
       <section id="diseno" class="business-design-section">
         <div class="business-design-inner">
           <div class="business-copy">
-            <span class="section-kicker">SERVICIO COMPLEMENTARIO</span>
-            <h2>DISE&Ntilde;O PARA<br />NEGOCIOS LOCALES</h2>
-            <p>Impulsa tu marca con una imagen profesional y atractiva.</p>
-            <a href="#contacto" class="btn-business">Ver m&aacute;s trabajos</a>
+            <span class="section-kicker">BRANDING</span>
+            <h2>DISE&Ntilde;O PARA<br />NEGOCIOS<br />LOCALES</h2>
+            <p class="business-description">Creamos identidades visuales claras y profesionales para que tu negocio sea reconocible, coherente y confiable en todos sus medios.</p>
+            <p class="business-services">Logotipo &middot; Colores de marca &middot; Papeler&iacute;a &middot; Redes sociales &middot; Material promocional</p>
+            <a href="https://wa.me/527471013037?text=Hola%2C%20quiero%20cotizar%20el%20branding%20de%20mi%20negocio." target="_blank" rel="noopener noreferrer" class="btn-business">Cotizar branding</a>
           </div>
 
           <div class="business-assets">
@@ -222,74 +268,120 @@
         </div>
       </section>
 
-      <section id="paginas-web" class="web-section">
-        <div class="web-section-inner">
-          <div class="web-copy">
+      <section id="paginas-web" class="web-showcase">
+        <div class="web-showcase-inner">
+          <div class="web-showcase-copy">
+            <span class="web-kicker">SOLUCIONES DIGITALES</span>
             <h2>P&Aacute;GINAS WEB</h2>
             <p>Creamos sitios web modernos, r&aacute;pidos y adaptados a tu negocio.</p>
-            <a href="#contacto" class="btn-web">Cotizar p&aacute;gina web</a>
+            <a href="https://wa.me/527471013037?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web." class="web-cta" target="_blank" rel="noopener noreferrer">Solicitar p&aacute;gina web</a>
           </div>
 
-          <div class="web-device-mockup" aria-label="Mockup de p&aacute;gina web responsiva">
-            <div class="laptop-frame">
-              <div class="fake-webpage">
-                <span class="fake-logo">Mr.O</span>
-                <h3>Soluciones para tu negocio</h3>
-                <p>Papeler&iacute;a, copias, impresiones y dise&ntilde;o.</p>
-              </div>
-            </div>
-            <div class="phone-frame">
-              <div class="fake-mobile-page">
-                <span>Mr.O</span>
-              </div>
-            </div>
+          <div class="web-gallery">
+            <article class="web-gallery-card">
+              <img src="./assets/img/paginas-web/web-showcase-01.jpg" alt="Dise&ntilde;o profesional de p&aacute;gina web y panel administrativo" loading="lazy" />
+            </article>
+
+            <article class="web-gallery-card">
+              <img src="./assets/img/paginas-web/web-showcase-02.jpg" alt="Dise&ntilde;o web de productos y comercio electr&oacute;nico" loading="lazy" />
+            </article>
+
+            <article class="web-gallery-card">
+              <img src="./assets/img/paginas-web/web-showcase-03.jpg" alt="Interfaces modernas para negocios digitales" loading="lazy" />
+            </article>
+
+            <article class="web-gallery-card">
+              <img src="./assets/img/paginas-web/web-showcase-04.jpg" alt="Dise&ntilde;o web profesional con paneles y cat&aacute;logo" loading="lazy" />
+            </article>
           </div>
 
           <div class="web-benefits">
-            <div>Dise&ntilde;o responsivo</div>
-            <div>R&aacute;pido y seguro</div>
-            <div>F&aacute;cil de administrar</div>
-            <div>Soporte incluido</div>
+            <div class="web-benefit">Dise&ntilde;o responsivo</div>
+            <div class="web-benefit">R&aacute;pido y seguro</div>
+            <div class="web-benefit">F&aacute;cil de administrar</div>
+            <div class="web-benefit">Soporte incluido</div>
           </div>
         </div>
       </section>
 
-      <section class="contact-location-section" id="ubicacion">
-        <div class="bottom-grid">
-          <div class="character-card">
-            <img src="./assets/img/personaje-mro.webp" alt="Atenci&oacute;n Mr.O Papeler&iacute;a" />
-            <div class="character-text">
-              <h2>&iexcl;Hola! Soy Mr.O</h2>
-              <p>y estoy aqu&iacute; para ayudarte.</p>
-              <p>En Mr.O Papeler&iacute;a nos esforzamos por ofrecerte productos de calidad, servicios r&aacute;pidos y atenci&oacute;n cercana.</p>
-            </div>
+      <section id="ubicacion" class="location-section">
+        <div class="location-inner">
+      
+          <div class="location-visual">
+            <img
+              src="./assets/img/ubicacion/servicios-mro.webp"
+              alt="Servicios de papelería, impresión y material escolar"
+              loading="lazy"
+            >
           </div>
-
-          <div class="location-card">
-            <div class="location-info">
-              <h2>VIS&Iacute;TANOS</h2>
-              <p><strong>Blvd. Vicente Guerrero 8L</strong><br />Col. Salubridad<br />Chilpancingo, Guerrero</p>
+      
+          <div class="location-copy">
+            <span class="location-kicker">MR.O PAPELERÍA</span>
+      
+            <h2>Soluciones para escuela y oficina</h2>
+      
+            <p>
+              Copias, impresiones, trámites y material escolar con atención clara,
+              rápida y confiable.
+            </p>
+          </div>
+      
+          <div class="location-info">
+            <div class="location-address">
+              <h2>VISÍTANOS</h2>
+      
+              <p>
+                <strong>Blvd. Vicente Guerrero 8L</strong><br>
+                Col. Salubridad<br>
+                Chilpancingo, Guerrero
+              </p>
+      
               <div class="location-actions">
-                <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Blvd.+Vicente+Guerrero+8L,+Col.+Salubridad,+Chilpancingo,+Guerrero" target="_blank" rel="noopener">C&oacute;mo llegar</a>
-                <a class="btn btn-whatsapp" href="https://wa.me/527471234567" target="_blank" rel="noopener" data-whatsapp>Escr&iacute;benos por WhatsApp</a>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Mr.O+Papelería+Chilpancingo"
+                  class="location-button location-button-map"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Cómo llegar
+                </a>
+      
+                <a
+                  href="https://wa.me/527471013037"
+                  class="location-button location-button-whatsapp"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Escríbenos por WhatsApp
+                </a>
               </div>
             </div>
-
-            <div class="map-frame">
-              <iframe title="Ubicaci&oacute;n Mr.O Papeler&iacute;a" src="https://www.google.com/maps?q=Blvd.%20Vicente%20Guerrero%208L,%20Col.%20Salubridad,%20Chilpancingo,%20Guerrero&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+            <div class="location-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7609.343237255719!2d-99.48879372510295!3d17.523182298879448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cbebc852234447%3A0xa6099a0e6eae5589!2sMr%20O%20Papeleria!5e0!3m2!1ses!2smx!4v1781898514373!5m2!1ses!2smx"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Mr.O Papelería"
+              ></iframe>
             </div>
           </div>
+      
         </div>
       </section>
 
     </main>
 
-    <a class="whatsapp-float" href="https://wa.me/527471234567?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Mr.O%20Papeler%C3%ADa" target="_blank" rel="noopener" aria-label="Contactar a Mr.O Papelería por WhatsApp" data-whatsapp>WA</a>
+    <a class="whatsapp-float" href="https://wa.me/527471013037" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Mr.O Papelería por WhatsApp" data-whatsapp data-message="Hola, necesito enviar archivos para impresión o hacer una consulta general.">WA</a>
 
     <footer class="site-footer" id="contacto">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <img src="./assets/img/logo-mro-blanco.png" alt="Logotipo de Mr.O Papelería" />
+          <img src="./assets/img/logo-mro.jpg" alt="Logotipo de Mr.O Papelería" />
           <p>Todo para escuela, oficina y negocios locales.</p>
         </div>
         <nav aria-label="Enlaces principales">
@@ -313,7 +405,8 @@
         </nav>
         <div class="footer-contact">
           <h3>Contacto</h3>
-          <a href="https://wa.me/527471234567?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Mr.O%20Papeler%C3%ADa" target="_blank" rel="noopener" data-whatsapp>WhatsApp</a>
+          <a href="https://wa.me/527471013037" target="_blank" rel="noopener noreferrer" data-whatsapp data-message="Hola, me gustaría hacer una consulta.">747 101 3037</a>
+          <a href="tel:+527471013037">Llamar: 747 101 3037</a>
           <a href="mailto:mropapeleria@gmail.com">mropapeleria@gmail.com</a>
           <a href="https://www.facebook.com/MrOPapeleria" target="_blank" rel="noopener">Facebook</a>
           <span>Instagram</span>
