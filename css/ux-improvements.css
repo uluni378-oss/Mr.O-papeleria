@@ -100,3 +100,34 @@ main {
 .skip-link:focus {
   transform: translateY(0);
 }
+
+/* Category Filters */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+.filter-btn {
+  background: #E6EEF2;
+  border: none;
+  color: #061B2E;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.filter-btn:hover {
+  background: #d4e2ea;
+}
+.filter-btn.active {
+  background: #009DBA;
+  color: #ffffff;
+}
+
+.product-card.is-hidden {
+  display: none !important;
+}

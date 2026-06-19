@@ -124,3 +124,30 @@ window.addEventListener("scroll", () => {
     siteHeader?.classList.remove("is-scrolled");
   }
 }, { passive: true });
+
+// Lgica de filtrado de productos
+document.addEventListener('DOMContentLoaded', () => {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.product-card');
+
+  if (filterBtns.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remover clase activa de todos
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Aadir clase activa al presionado
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        productCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.classList.remove('is-hidden');
+          } else {
+            card.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  }
+});
