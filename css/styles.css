@@ -3684,3 +3684,215 @@ main > section[id],
     height: 240px;
   }
 }
+
+
+.quick-services-section {
+  background: #ffffff;
+  padding: 58px 40px 64px;
+  overflow: hidden;
+}
+
+.quick-services-inner {
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.quick-services-copy {
+  align-self: center;
+}
+
+.quick-services-copy .section-kicker {
+  display: block;
+  margin-bottom: 12px;
+  color: #009DBA;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.quick-services-copy h2 {
+  margin: 0 0 18px;
+  color: #003B73;
+  font-size: 38px;
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+}
+
+.quick-services-copy p {
+  margin: 0 0 22px;
+  color: #314756;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.quick-services-cta {
+  display: inline-flex;
+  min-height: 43px;
+  padding: 0 21px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #003B73;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.quick-services-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(115px, 1fr));
+  gap: 24px 18px;
+  align-items: start;
+}
+
+.quick-service-card {
+  min-width: 0;
+  text-align: center;
+}
+
+.quick-service-image {
+  height: 112px;
+  overflow: hidden;
+  border-radius: 13px;
+  background: #F4F8FA;
+  box-shadow: 0 8px 22px rgba(6, 27, 46, 0.08);
+}
+
+.quick-service-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.quick-service-card h3 {
+  margin: 11px 5px 0;
+  color: #061B2E;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.quick-service-card {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 500ms ease,
+    transform 500ms ease,
+    box-shadow 220ms ease;
+}
+
+.quick-service-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quick-service-card:nth-child(2) {
+  transition-delay: 50ms;
+}
+
+.quick-service-card:nth-child(3) {
+  transition-delay: 100ms;
+}
+
+.quick-service-card:nth-child(4) {
+  transition-delay: 150ms;
+}
+
+.quick-service-card:nth-child(5) {
+  transition-delay: 200ms;
+}
+
+.quick-service-card:nth-child(6) {
+  transition-delay: 250ms;
+}
+
+.quick-service-image {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.quick-service-card:hover .quick-service-image {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(6, 27, 46, 0.15);
+}
+
+.quick-service-card:hover img {
+  transform: scale(1.035);
+}
+
+.quick-service-image img {
+  transition: transform 350ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quick-service-card,
+  .quick-service-image,
+  .quick-service-image img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 1120px) {
+  .quick-services-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-services-copy {
+    max-width: 620px;
+  }
+
+  .quick-services-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .quick-services-section {
+    padding: 44px 18px 52px;
+  }
+
+  .quick-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+  }
+
+  .quick-service-image {
+    height: 125px;
+  }
+
+  .quick-services-copy h2 {
+    font-size: 34px;
+  }
+}
+
+/* Animations for other sections */
+.category-card, .school-season-copy, .school-season-list, .business-card, .web-gallery-card, .location-inner > div {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.category-card.is-visible, .school-season-copy.is-visible, .school-season-list.is-visible, .business-card.is-visible, .web-gallery-card.is-visible, .location-inner > div.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-card, .school-season-copy, .school-season-list, .business-card, .web-gallery-card, .location-inner > div {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

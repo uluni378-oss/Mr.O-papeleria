@@ -151,3 +151,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// Intersection Observer for Animations
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('.quick-service-card, .category-card, .school-season-copy, .school-season-list, .business-card, .web-gallery-card, .location-inner > div');
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          obs.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    animatedElements.forEach((el) => {
+      observer.observe(el);
+    });
+  } else {
+    animatedElements.forEach((el) => {
+      el.classList.add("is-visible");
+    });
+  }
+});
