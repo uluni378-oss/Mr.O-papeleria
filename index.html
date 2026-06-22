@@ -174,30 +174,41 @@
         </div>
       </section>
 
-      <section class="school-season" id="papeleria">
-        <div class="school-season-bg" aria-hidden="true">
-          <img src="./assets/img/temporada-escolar-fondo.svg" alt="" />
-        </div>
+      <section class="school-season-banner" id="papeleria">
+  <picture class="school-season-banner__picture">
+    <source
+      media="(max-width: 700px)"
+      srcset="./assets/img/temporada-escolar-realista-mobile.webp"
+    >
+    <img
+      src="./assets/img/temporada-escolar-realista.webp"
+      alt="Cuadernos, lápices, colores y útiles para la temporada escolar"
+      width="1920"
+      height="700"
+      loading="eager"
+      fetchpriority="high"
+    >
+  </picture>
 
-        <div class="school-season-overlay" aria-hidden="true"></div>
+  <div class="school-season-overlay" aria-hidden="true"></div>
 
-        <div class="school-season-inner">
-          <div class="school-season-copy reveal">
-            <h2><span>TEMPORADA</span> ESCOLAR</h2>
-            <p>Encuentra todo para este regreso a clases.</p>
-            <a href="./productos-escolares.html" class="school-season-button">Ver productos</a>
-          </div>
+  <div class="school-season-inner">
+    <div class="school-season-copy reveal">
+      <h2><span>TEMPORADA</span><br>ESCOLAR</h2>
+      <p>Encuentra todo para este regreso a clases.</p>
+      <a href="./productos-escolares.html" class="school-season-button">Ver productos</a>
+    </div>
 
-          <ul class="school-season-list reveal">
-            <li>Cuadernos</li>
-            <li>Colores</li>
-            <li>Lápices</li>
-            <li>Mochilas</li>
-            <li>Cartulinas</li>
-            <li>Y mucho más...</li>
-          </ul>
-        </div>
-      </section>
+    <ul class="school-season-list reveal">
+      <li>Cuadernos</li>
+      <li>Colores</li>
+      <li>Lápices</li>
+      <li>Mochilas</li>
+      <li>Cartulinas</li>
+      <li>Y mucho más...</li>
+    </ul>
+  </div>
+</section>
 
       <section id="servicios" class="quick-services-section">
   <div class="quick-services-inner">

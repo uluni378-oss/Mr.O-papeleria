@@ -727,31 +727,13 @@ main > section[id],
 .art-web span:nth-child(2) { left: 50px; top: 58px; width: 44%; height: 30px; background: var(--mro-cyan); }
 .art-web span:nth-child(3) { right: 42px; bottom: 22px; width: 82px; height: 118px; background: var(--mro-dark); }
 
-.school-season {
-  padding-block: clamp(56px, 8vw, 96px);
-  color: var(--mro-white);
-  background:
-    radial-gradient(circle at 78% 28%, rgba(0, 166, 200, 0.28), transparent 28%),
-    var(--mro-dark);
-}
 
-.season-grid {
-  display: grid;
-  gap: 28px;
-  align-items: center;
-}
 
-.season-copy {
-  display: grid;
-  gap: 16px;
-}
 
-.season-title {
-  max-width: 8ch;
-  font-size: clamp(2.7rem, 5.6vw, 5.1rem);
-  font-weight: 900;
-  line-height: 0.9;
-}
+
+
+
+
 
 .season-copy .btn {
   justify-self: start;
@@ -761,44 +743,15 @@ main > section[id],
   color: rgba(255, 255, 255, 0.78);
 }
 
-.season-collage {
-  position: relative;
-  overflow: hidden;
-  min-height: 320px;
-}
 
-.season-collage > * {
-  position: absolute;
-  border: 3px solid var(--mro-white);
-  border-radius: 18px;
-}
 
-.season-book {
-  left: 12%;
-  top: 18%;
-  width: 190px;
-  height: 230px;
-  background: var(--mro-cyan);
-  transform: rotate(-8deg);
-}
 
-.season-pencil {
-  right: 18%;
-  top: 10%;
-  width: 28px;
-  height: 240px;
-  background: linear-gradient(var(--mro-yellow) 0 70%, var(--mro-white) 70%);
-  transform: rotate(18deg);
-}
 
-.season-colors {
-  left: 38%;
-  bottom: 10%;
-  display: flex;
-  gap: 9px;
-  padding: 12px;
-  background: var(--mro-white);
-}
+
+
+
+
+
 
 .season-colors span {
   width: 22px;
@@ -1065,11 +1018,7 @@ main > section[id],
   object-fit: cover;
 }
 
-.season-collage {
-  min-height: auto;
-  border-radius: 24px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
+
 
 .season-collage > img {
   position: static;
@@ -1277,9 +1226,7 @@ main > section[id],
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .season-grid {
-    grid-template-columns: 0.7fr 1.25fr 0.5fr;
-  }
+  
 }
 
 @media (min-width: 1080px) {
@@ -1364,9 +1311,7 @@ main > section[id],
     scale: 0.88;
   }
 
-  .season-collage {
-    min-height: 260px;
-  }
+  
 
   .laptop {
     right: 0;
@@ -1432,9 +1377,7 @@ main > section[id],
     min-height: 300px;
   }
 
-  .season-book {
-    left: 4%;
-  }
+  
 
   .season-bag {
     right: 0;
@@ -2862,20 +2805,9 @@ main > section[id],
 }
 
 /* Temporada escolar: fondo completo y textos HTML */
-.school-season {
-  position: relative;
-  min-height: 430px;
-  padding: 0;
-  overflow: hidden;
-  color: #ffffff;
-  background: #061b2e;
-}
 
-.school-season-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
+
+
 
 .school-season-bg img {
   width: 100%;
@@ -2885,32 +2817,9 @@ main > section[id],
   object-position: center right;
 }
 
-.school-season-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(6, 27, 46, 0.98) 0%,
-      rgba(6, 27, 46, 0.9) 28%,
-      rgba(6, 27, 46, 0.45) 55%,
-      rgba(6, 27, 46, 0.12) 100%
-    );
-}
 
-.school-season-inner {
-  position: relative;
-  z-index: 2;
-  max-width: 1320px;
-  min-height: 430px;
-  margin: 0 auto;
-  padding: 54px 48px;
-  display: grid;
-  grid-template-columns: 340px 1fr 235px;
-  gap: 34px;
-  align-items: center;
-}
+
+
 
 .school-season-copy {
   grid-column: 1;
@@ -2961,16 +2870,7 @@ main > section[id],
   outline: none;
 }
 
-.school-season-list {
-  grid-column: 3;
-  margin: 0;
-  padding: 22px 24px;
-  list-style: none;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-}
+
 
 .school-season-list li {
   position: relative;
@@ -3110,18 +3010,13 @@ main > section[id],
 }
 
 @media (max-width: 1050px) {
-  .school-season-inner {
-    grid-template-columns: 1fr 240px;
-    padding: 46px 30px;
-  }
+  
 
   .school-season-copy {
     grid-column: 1;
   }
 
-  .school-season-list {
-    grid-column: 2;
-  }
+  
 
   .school-season-bg img {
     object-position: 64% center;
@@ -3141,21 +3036,12 @@ main > section[id],
 }
 
 @media (max-width: 720px) {
-  .school-season {
-    min-height: 620px;
-  }
+  
 
-  .school-season-inner {
-    min-height: 620px;
-    grid-template-columns: 1fr;
-    align-content: space-between;
-    padding: 42px 20px 28px;
-  }
+  
 
   .school-season-copy,
-  .school-season-list {
-    grid-column: 1;
-  }
+  
 
   .school-season-copy h2 {
     font-size: 48px;
@@ -3165,20 +3051,9 @@ main > section[id],
     object-position: 67% center;
   }
 
-  .school-season-overlay {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(6, 27, 46, 0.98) 0%,
-        rgba(6, 27, 46, 0.86) 42%,
-        rgba(6, 27, 46, 0.38) 70%,
-        rgba(6, 27, 46, 0.78) 100%
-      );
-  }
+  
 
-  .school-season-list {
-    width: 100%;
-  }
+  
 
   .map-container iframe {
     min-height: 320px;
@@ -3894,5 +3769,166 @@ main > section[id],
     opacity: 1;
     transform: none;
     transition: none;
+  }
+}
+
+
+.school-season-banner {
+  position: relative;
+  min-height: clamp(390px, 36vw, 560px);
+  overflow: hidden;
+  color: #ffffff;
+  background: #051c30;
+}
+
+.school-season-banner__picture,
+.school-season-banner__picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.school-season-banner__picture {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.school-season-banner__picture img {
+  display: block;
+  object-fit: cover;
+  object-position: 62% center;
+}
+
+.school-season-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 28, 48, 0.96) 0%,
+    rgba(5, 28, 48, 0.80) 32%,
+    rgba(5, 28, 48, 0.25) 65%,
+    rgba(5, 28, 48, 0.08) 100%
+  );
+  z-index: 1;
+}
+
+.school-season-inner {
+  position: relative;
+  z-index: 2;
+  width: min(100% - 32px, 1180px);
+  margin: 0 auto;
+  min-height: clamp(390px, 36vw, 560px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.school-season-copy {
+  max-width: 500px;
+}
+
+.school-season-copy h2 {
+  font-size: clamp(2.7rem, 5.6vw, 5.1rem);
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 16px;
+}
+
+.school-season-copy p {
+  font-size: 1.18rem;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.school-season-button {
+  display: inline-flex;
+  min-height: 48px;
+  padding: 13px 26px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #ffc400;
+  color: #061b2e;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 900;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.school-season-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+
+.school-season-list {
+  background: rgba(7, 35, 55, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.30);
+  border-radius: 20px;
+  padding: 30px 40px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.school-season-list li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  padding-left: 20px;
+}
+
+.school-season-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #009dba;
+  font-size: 1.5rem;
+  line-height: 1;
+  top: -2px;
+}
+
+@media (max-width: 900px) {
+  .school-season-banner {
+    min-height: 520px;
+  }
+  .school-season-inner {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 700px) {
+  .school-season-banner__picture img {
+    object-position: center;
+  }
+  
+  .school-season-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 28, 48, 0.92) 0%,
+      rgba(5, 28, 48, 0.85) 40%,
+      rgba(5, 28, 48, 0.30) 100%
+    );
+  }
+
+  .school-season-inner {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 0;
+  }
+
+  .school-season-copy {
+    text-align: center;
+  }
+  
+  .school-season-list {
+    align-self: center;
+    width: 100%;
+    max-width: 400px;
   }
 }
