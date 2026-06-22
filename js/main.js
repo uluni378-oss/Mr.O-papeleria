@@ -191,3 +191,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// QUICK SERVICES REVEAL OBSERVER
+document.addEventListener("DOMContentLoaded", () => {
+  const quickServiceElements = document.querySelectorAll(".quick-reveal");
+  if(quickServiceElements.length > 0) {
+    const quickServiceObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    quickServiceElements.forEach((element, index) => {
+      element.style.transitionDelay = `${index * 70}ms`;
+      quickServiceObserver.observe(element);
+    });
+  }
+});
