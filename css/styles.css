@@ -4004,9 +4004,9 @@ main > section[id],
   position: relative;
   overflow: hidden;
   min-height: 250px;
-  border-radius: 24px;
-  background: #0b2135;
-  box-shadow: 0 24px 65px rgba(8, 38, 58, 0.16);
+  border-radius: 22px;
+  background: #dfe7eb;
+  box-shadow: 0 22px 58px rgba(8, 37, 58, 0.18);
   transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
 }
 
@@ -4022,18 +4022,20 @@ main > section[id],
   display: block;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  filter: saturate(1.03) contrast(1.02);
+  transition: transform 0.55s ease, filter 0.55s ease;
 }
 
 .identity-card:hover img {
   transform: scale(1.035);
+  filter: saturate(1.08) contrast(1.04);
 }
 
 .identity-card::after {
   content: "";
   position: absolute;
-  inset: 40% 0 0;
-  background: linear-gradient(180deg, rgba(5, 25, 40, 0), rgba(5, 25, 40, 0.88));
+  inset: 45% 0 0;
+  background: linear-gradient(180deg, rgba(5, 25, 40, 0), rgba(5, 25, 40, 0.88) 78%, rgba(5, 25, 40, 0.96) 100%);
   pointer-events: none;
 }
 
@@ -4098,3 +4100,10 @@ main > section[id],
     transform: none;
   }
 }
+
+.identity-card--complete img { object-position: 50% 50%; }
+.identity-card--logo img { object-position: 52% 48%; }
+.identity-card--digital img { object-position: 55% 50%; }
+.identity-card--cards img { object-position: 50% 55%; }
+.identity-card--stationery img { object-position: 50% 48%; }
+.identity-card--promo img { object-position: 50% 52%; }
