@@ -836,14 +836,9 @@ main > section[id],
   background: var(--mro-light);
 }
 
-.business-grid {
-  align-items: center;
-}
 
-.business-copy {
-  display: grid;
-  gap: 18px;
-}
+
+
 
 .business-copy h2 {
   max-width: 12ch;
@@ -2146,22 +2141,9 @@ main > section[id],
   padding: 8px 40px 34px;
 }
 
-.business-design > .container.business-grid {
-  width: 100%;
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 24px 26px;
-  display: grid;
-  grid-template-columns: 235px 1fr;
-  gap: 34px;
-  align-items: center;
-  border-radius: 18px;
-  background: #f4f8fa;
-}
+.business-design > .container
 
-.business-design .business-copy {
-  display: block;
-}
+.business-design 
 
 .business-design .eyebrow {
   display: block;
@@ -2258,9 +2240,7 @@ main > section[id],
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .business-design > .container.business-grid {
-    grid-template-columns: 1fr;
-  }
+  .business-design > .container
 
   .business-design .portfolio-strip {
     grid-template-columns: repeat(3, 1fr);
@@ -2313,15 +2293,7 @@ main > section[id],
   box-shadow: 0 18px 46px rgba(6, 27, 46, 0.08);
 }
 
-.business-showcase .business-copy {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 14px;
-  padding: 6px 0;
-}
+.business-showcase 
 
 .business-showcase .business-copy .eyebrow {
   margin: 0;
@@ -2443,9 +2415,7 @@ main > section[id],
     grid-template-columns: 1fr;
   }
 
-  .business-showcase .business-copy {
-    max-width: 760px;
-  }
+  .business-showcase 
 
   .business-showcase .business-copy h2 {
     max-width: 14ch;
@@ -2487,26 +2457,11 @@ main > section[id],
 }
 
 /* Secciones limpias sin superposición: diseño para negocios + páginas web */
-.business-design-section {
-  overflow: hidden;
-  padding: 56px 40px;
-  background: #f4f8fa;
-}
 
-.business-design-inner {
-  max-width: 1320px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 42px;
-  align-items: center;
-}
 
-.business-design-section .business-copy {
-  position: relative;
-  z-index: 1;
-  display: block;
-}
+
+
+.business-design-section 
 
 .section-kicker {
   display: block;
@@ -2528,13 +2483,7 @@ main > section[id],
   letter-spacing: -0.035em;
 }
 
-.business-design-section .business-description {
-  max-width: 285px;
-  margin: 0 0 14px;
-  color: #061b2e;
-  font-size: 16px;
-  line-height: 1.45;
-}
+.business-design-section 
 
 .business-design-section .business-services {
   max-width: 290px;
@@ -2545,34 +2494,11 @@ main > section[id],
   font-weight: 700;
 }
 
-.btn-business {
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 24px;
-  border-radius: 999px;
-  color: #ffffff;
-  background: #003b73;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 900;
-}
 
-.business-design-section .business-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(130px, 1fr));
-  gap: 18px;
-  align-items: stretch;
-}
 
-.business-card {
-  overflow: hidden;
-  text-align: center;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
-}
+.business-design-section 
+
+
 
 .business-card img {
   width: 100%;
@@ -2611,27 +2537,19 @@ main > section[id],
 }
 
 @media (max-width: 1100px) {
-  .business-design-inner {
-    grid-template-columns: 1fr;
-  }
+  
 
-  .business-design-section .business-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .business-design-section 
 }
 
 @media (max-width: 700px) {
-  .business-design-section {
-    padding: 36px 18px;
-  }
+  
 
   .contact-location-section {
     padding: 0 18px;
   }
 
-  .business-design-section .business-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .business-design-section 
 
   .business-design-section .business-copy h2 {
     font-size: 34px;
@@ -2657,37 +2575,17 @@ main > section[id],
 }
 
 @media (max-width: 520px) {
-  .business-design-section .business-grid {
-    grid-template-columns: 1fr;
-  }
+  .business-design-section 
 }
 
 /* Corrección final: assets reales de diseño para negocios */
-.business-design-section {
-  padding: 56px 40px;
-  overflow: hidden;
-  background: #f4f8fa;
-}
 
-.business-design-inner {
-  max-width: 1320px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
-  gap: 42px;
-  align-items: center;
-}
 
-.business-design-section .business-copy {
-  position: static;
-  z-index: auto;
-}
 
-.business-assets {
-  min-width: 0;
-  display: grid;
-  gap: 18px;
-}
+
+.business-design-section 
+
+
 
 .business-hero-card {
   margin: 0;
@@ -2705,23 +2603,9 @@ main > section[id],
   object-position: center;
 }
 
-.business-design-section .business-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  align-items: stretch;
-}
+.business-design-section 
 
-.business-design-section .business-card {
-  display: grid;
-  grid-template-rows: 132px auto;
-  min-width: 0;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
-}
+.business-design-section 
 
 .business-design-section .business-card img {
   width: 100%;
@@ -2746,19 +2630,13 @@ main > section[id],
 }
 
 @media (max-width: 1100px) {
-  .business-design-inner {
-    grid-template-columns: 1fr;
-  }
+  
 
-  .business-design-section .business-description {
-    max-width: 520px;
-  }
+  .business-design-section 
 }
 
 @media (max-width: 780px) {
-  .business-design-section .business-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  .business-design-section 
 
   .business-hero-card img {
     height: 190px;
@@ -2766,17 +2644,11 @@ main > section[id],
 }
 
 @media (max-width: 560px) {
-  .business-design-section {
-    padding: 36px 18px;
-  }
+  
 
-  .business-design-section .business-grid {
-    grid-template-columns: 1fr;
-  }
+  .business-design-section 
 
-  .business-design-section .business-card {
-    grid-template-rows: 150px auto;
-  }
+  .business-design-section 
 
   .business-design-section .business-card img {
     height: 150px;
@@ -3971,9 +3843,7 @@ main > section[id],
 .business-card .service-card__media {
   margin-bottom: 20px;
 }
-.business-card > img {
-  display: none; /* In case old raw img tag leaked */
-}
+
 
 /* Web Showcase */
 .web-gallery {
@@ -3986,5 +3856,133 @@ main > section[id],
 @media (max-width: 900px) {
   .web-gallery {
     grid-template-columns: 1fr;
+  }
+}
+
+
+/* Branding Section */
+.business-branding {
+  padding-block: clamp(3rem, 6vw, 6rem);
+  background:
+    radial-gradient(circle at 85% 15%, rgba(0, 166, 200, 0.11), transparent 30%),
+    linear-gradient(180deg, #f7fafc 0%, #eef4f7 100%);
+}
+
+.business-branding__layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.75fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.business-branding__intro {
+  position: sticky;
+  top: 7rem;
+}
+
+.business-branding__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.brand-service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(12, 52, 78, 0.10);
+  box-shadow: 0 18px 45px rgba(9, 41, 61, 0.05);
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.brand-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 60px rgba(9, 41, 61, 0.12);
+}
+
+.brand-service-card .hidden-link {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+.brand-service-card__media {
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  background: #e9f0f4;
+  margin: 0;
+}
+
+.brand-service-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.brand-service-card:hover .brand-service-card__media img {
+  transform: scale(1.035);
+}
+
+.brand-service-card__body {
+  padding: 1.25rem 1.2rem 1.4rem;
+}
+
+.brand-service-card__body h3 {
+  margin: 0 0 0.4rem;
+  color: #07365c;
+  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
+  font-weight: 800;
+}
+
+.brand-service-card__body p {
+  margin: 0;
+  color: #526677;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 1024px) {
+  .business-branding__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .business-branding__intro {
+    position: static;
+  }
+
+  .business-branding__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .business-branding__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-service-card__media {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-service-card {
+    transition: none;
+  }
+  .brand-service-card:hover {
+    transform: none;
+    box-shadow: 0 18px 45px rgba(9, 41, 61, 0.05);
+  }
+  .brand-service-card__media img {
+    transition: none;
+  }
+  .brand-service-card:hover .brand-service-card__media img {
+    transform: none;
   }
 }
