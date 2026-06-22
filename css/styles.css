@@ -3861,55 +3861,134 @@ main > section[id],
 
 
 /* Branding Section */
+.business-branding {
+  padding-block: clamp(3rem, 6vw, 6rem);
+  background:
+    radial-gradient(circle at 85% 15%, rgba(0, 166, 200, 0.11), transparent 30%),
+    linear-gradient(180deg, #f7fafc 0%, #eef4f7 100%);
+}
 
+.business-branding__layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.75fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
 
+.business-branding__intro {
+  position: sticky;
+  top: 7rem;
+}
 
+.business-branding__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
 
+.brand-service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(12, 52, 78, 0.10);
+  box-shadow: 0 18px 45px rgba(9, 41, 61, 0.05);
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
 
+.brand-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 60px rgba(9, 41, 61, 0.12);
+}
 
+.brand-service-card .hidden-link {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
 
+.brand-service-card__media {
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  background: #e9f0f4;
+  margin: 0;
+}
 
+.brand-service-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
 
+.brand-service-card:hover .brand-service-card__media img {
+  transform: scale(1.035);
+}
 
+.brand-service-card__body {
+  padding: 1.25rem 1.2rem 1.4rem;
+}
 
+.brand-service-card__body h3 {
+  margin: 0 0 0.4rem;
+  color: #07365c;
+  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
+  font-weight: 800;
+}
 
-
-
-
-
-
-
-.brand-service-card:hover 
-
-
-
-
-
-
+.brand-service-card__body p {
+  margin: 0;
+  color: #526677;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
 
 @media (max-width: 1024px) {
-  
+  .business-branding__layout {
+    grid-template-columns: 1fr;
+  }
 
-  
+  .business-branding__intro {
+    position: static;
+  }
 
-  
+  .business-branding__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
-  
+  .business-branding__grid {
+    grid-template-columns: 1fr;
+  }
 
-  
+  .brand-service-card__media {
+    aspect-ratio: 16 / 10;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  
-  
-  
-  .brand-service-card:hover 
+  .brand-service-card {
+    transition: none;
+  }
+  .brand-service-card:hover {
+    transform: none;
+    box-shadow: 0 18px 45px rgba(9, 41, 61, 0.05);
+  }
+  .brand-service-card__media img {
+    transition: none;
+  }
+  .brand-service-card:hover .brand-service-card__media img {
+    transform: none;
+  }
 }
 
 
-/* Bento Grid Branding Section */
+/* Bento Grid Branding Section (New Photorealistic Layout) */
 .identity-showcase-section {
   background:
     radial-gradient(circle at 90% 5%, rgba(0, 166, 200, 0.18), transparent 30%),
@@ -4071,6 +4150,14 @@ main > section[id],
   z-index: 10;
 }
 
+/* Individual Image Framing */
+.identity-card--complete img { object-position: 50% 50%; }
+.identity-card--logo img { object-position: 52% 48%; }
+.identity-card--digital img { object-position: 55% 50%; }
+.identity-card--cards img { object-position: 50% 55%; }
+.identity-card--stationery img { object-position: 50% 48%; }
+.identity-card--promo img { object-position: 50% 52%; }
+
 @media (max-width: 960px) {
   .identity-showcase {
     grid-template-columns: 1fr;
@@ -4100,10 +4187,3 @@ main > section[id],
     transform: none;
   }
 }
-
-.identity-card--complete img { object-position: 50% 50%; }
-.identity-card--logo img { object-position: 52% 48%; }
-.identity-card--digital img { object-position: 55% 50%; }
-.identity-card--cards img { object-position: 50% 55%; }
-.identity-card--stationery img { object-position: 50% 48%; }
-.identity-card--promo img { object-position: 50% 52%; }
