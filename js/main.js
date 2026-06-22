@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Intersection Observer for Animations
 document.addEventListener('DOMContentLoaded', () => {
-  const animatedElements = document.querySelectorAll('.quick-service-card, .category-card, .school-season-copy, .school-season-list, .brand-service-card, .web-gallery-card, .location-inner > div');
+  const animatedElements = document.querySelectorAll('.quick-service-card, .category-card, .school-season-copy, .school-season-list, .identity-card, .web-gallery-card, .location-inner > div');
 
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(

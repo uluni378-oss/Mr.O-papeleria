@@ -3861,128 +3861,240 @@ main > section[id],
 
 
 /* Branding Section */
-.business-branding {
-  padding-block: clamp(3rem, 6vw, 6rem);
-  background:
-    radial-gradient(circle at 85% 15%, rgba(0, 166, 200, 0.11), transparent 30%),
-    linear-gradient(180deg, #f7fafc 0%, #eef4f7 100%);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brand-service-card:hover 
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  
+
+  
+
+  
 }
 
-.business-branding__layout {
+@media (max-width: 640px) {
+  
+
+  
+}
+
+@media (prefers-reduced-motion: reduce) {
+  
+  
+  
+  .brand-service-card:hover 
+}
+
+
+/* Bento Grid Branding Section */
+.identity-showcase-section {
+  background:
+    radial-gradient(circle at 90% 5%, rgba(0, 166, 200, 0.18), transparent 30%),
+    radial-gradient(circle at 10% 95%, rgba(247, 178, 26, 0.10), transparent 28%),
+    linear-gradient(180deg, #f8fbfd 0%, #edf4f7 100%);
+  position: relative;
+}
+
+.identity-showcase-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.identity-showcase {
   display: grid;
-  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.75fr);
+  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.8fr);
   gap: clamp(2rem, 5vw, 5rem);
   align-items: start;
+  padding-block: clamp(3rem, 6vw, 6rem);
+  position: relative;
+  z-index: 2;
 }
 
-.business-branding__intro {
+.identity-showcase__intro {
   position: sticky;
   top: 7rem;
 }
 
-.business-branding__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.1rem;
+.eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #009DBA;
+  margin-bottom: 0.75rem;
 }
 
-.brand-service-card {
+.identity-showcase__intro h2 {
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  color: #07365c;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.identity-showcase__intro p {
+  font-size: 1.1rem;
+  color: #526677;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.identity-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+}
+
+.identity-benefits li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #3b4c5c;
+  font-weight: 500;
+}
+
+.identity-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #009DBA;
+  font-weight: bold;
+}
+
+.identity-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(220px, auto);
+  gap: 1.25rem;
+}
+
+.identity-card--featured {
+  grid-row: span 2;
+}
+
+.identity-card {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid rgba(12, 52, 78, 0.10);
-  box-shadow: 0 18px 45px rgba(9, 41, 61, 0.05);
-  transition:
-    transform 0.45s ease,
-    box-shadow 0.45s ease;
+  min-height: 250px;
+  border-radius: 24px;
+  background: #0b2135;
+  box-shadow: 0 24px 65px rgba(8, 38, 58, 0.16);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
 }
 
-.brand-service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 26px 60px rgba(9, 41, 61, 0.12);
+.identity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 75px rgba(8, 38, 58, 0.25);
 }
 
-.brand-service-card .hidden-link {
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-}
-
-.brand-service-card__media {
-  aspect-ratio: 8 / 5;
-  overflow: hidden;
-  background: #e9f0f4;
-  margin: 0;
-}
-
-.brand-service-card__media img {
-  display: block;
+.identity-card img {
   width: 100%;
   height: 100%;
+  min-height: inherit;
+  display: block;
   object-fit: cover;
   object-position: center;
   transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.brand-service-card:hover .brand-service-card__media img {
+.identity-card:hover img {
   transform: scale(1.035);
 }
 
-.brand-service-card__body {
-  padding: 1.25rem 1.2rem 1.4rem;
+.identity-card::after {
+  content: "";
+  position: absolute;
+  inset: 40% 0 0;
+  background: linear-gradient(180deg, rgba(5, 25, 40, 0), rgba(5, 25, 40, 0.88));
+  pointer-events: none;
 }
 
-.brand-service-card__body h3 {
-  margin: 0 0 0.4rem;
-  color: #07365c;
-  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
-  font-weight: 800;
+.identity-card__content {
+  position: absolute;
+  z-index: 2;
+  left: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.2rem;
+  color: #ffffff;
+  pointer-events: none;
 }
 
-.brand-service-card__body p {
+.identity-card__content h3 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.identity-card__content p {
   margin: 0;
-  color: #526677;
-  font-size: 0.95rem;
+  max-width: 35ch;
+  color: rgba(255, 255, 255, 0.84);
   line-height: 1.45;
+  font-size: 0.95rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-@media (max-width: 1024px) {
-  .business-branding__layout {
+.identity-card .hidden-link {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+@media (max-width: 960px) {
+  .identity-showcase {
     grid-template-columns: 1fr;
   }
-
-  .business-branding__intro {
+  .identity-showcase__intro {
     position: static;
-  }
-
-  .business-branding__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
-  .business-branding__grid {
+  .identity-showcase__grid {
     grid-template-columns: 1fr;
   }
-
-  .brand-service-card__media {
-    aspect-ratio: 16 / 10;
+  .identity-card--featured {
+    grid-row: auto;
+  }
+  .identity-card {
+    min-height: 300px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .brand-service-card {
+  .identity-card, .identity-card img {
     transition: none;
   }
-  .brand-service-card:hover {
-    transform: none;
-    box-shadow: 0 18px 45px rgba(9, 41, 61, 0.05);
-  }
-  .brand-service-card__media img {
-    transition: none;
-  }
-  .brand-service-card:hover .brand-service-card__media img {
+  .identity-card:hover, .identity-card:hover img {
     transform: none;
   }
 }
