@@ -178,3 +178,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// Fallback for missing images
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('img[data-fallback]').forEach(img => {
+    img.addEventListener('error', function() {
+      const fallbackSrc = this.getAttribute('data-fallback');
+      if (fallbackSrc && this.src !== fallbackSrc && !this.src.includes(fallbackSrc)) {
+        this.src = fallbackSrc;
+      }
+    });
+  });
+});

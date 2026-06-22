@@ -3932,3 +3932,59 @@ main > section[id],
     max-width: 400px;
   }
 }
+
+
+/* Service Card Global Styles */
+.service-card__media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111827;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-radius: 12px;
+}
+
+.service-card__media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+}
+
+.service-card:hover .service-card__media img {
+  transform: scale(1.035);
+  filter: saturate(1.06);
+}
+
+/* Fixes for category cards that used category-art before */
+.category-card .service-card__media {
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+/* Fixes for business cards that had raw imgs before */
+.business-card .service-card__media {
+  margin-bottom: 20px;
+}
+.business-card > img {
+  display: none; /* In case old raw img tag leaked */
+}
+
+/* Web Showcase */
+.web-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .web-gallery {
+    grid-template-columns: 1fr;
+  }
+}
