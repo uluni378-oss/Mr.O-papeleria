@@ -214,3 +214,104 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// WEB SECTION REVEAL OBSERVER
+document.addEventListener("DOMContentLoaded", () => {
+  const webRevealElements = document.querySelectorAll(".web-reveal-left, .web-reveal-stagger, .web-reveal-right");
+  if(webRevealElements.length > 0) {
+    const webRevealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    webRevealElements.forEach(el => webRevealObserver.observe(el));
+  }
+});
+
+
+// --- LIGHTBOX OBSERVER AND LOGIC ---
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("image-lightbox");
+  const lightboxImage = document.getElementById("image-lightbox-img");
+  const lightboxTitle = document.getElementById("image-lightbox-title");
+  const lightboxTriggers = document.querySelectorAll(".web-preview");
+  const lightboxCloseButtons = document.querySelectorAll("[data-lightbox-close]");
+
+  let lastFocusedElement = null;
+
+  const openLightbox = (trigger) => {
+  if (!lightbox || !lightboxImage || !lightboxTitle) return;
+
+  const previewImage = trigger.querySelector("img");
+
+  if (!previewImage) return;
+
+  const imageSource =
+    previewImage.currentSrc ||
+    previewImage.getAttribute("src");
+
+  const imageAlt =
+    previewImage.getAttribute("alt") || "";
+
+  const imageTitle =
+    trigger.dataset.lightboxTitle ||
+    trigger.querySelector(".web-preview__label")?.textContent?.trim() ||
+    "";
+
+  if (!imageSource) return;
+
+  lastFocusedElement = document.activeElement;
+
+  lightboxImage.onload = () => {
+    lightbox.classList.remove("has-error");
+  };
+
+  lightboxImage.onerror = () => {
+    lightbox.classList.add("has-error");
+  };
+
+  lightboxImage.src = imageSource;
+  lightboxImage.alt = imageAlt;
+  lightboxTitle.textContent = imageTitle;
+
+  lightbox.classList.add("is-open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.classList.add("lightbox-open");
+
+  const closeButton =
+    lightbox.querySelector(".image-lightbox__close");
+
+  closeButton?.focus();
+};
+
+  const closeLightbox = () => {
+  if (!lightbox || !lightboxImage || !lightboxTitle) return;
+
+  lightbox.classList.remove("is-open", "has-error");
+  lightbox.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("lightbox-open");
+
+  lightboxImage.removeAttribute("src");
+  lightboxImage.alt = "";
+  lightboxTitle.textContent = "";
+
+  lastFocusedElement?.focus();
+};
+
+  lightboxTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => openLightbox(trigger));
+  });
+
+  lightboxCloseButtons.forEach((button) => {
+    button.addEventListener("click", closeLightbox);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && lightbox?.classList.contains("is-open")) {
+      closeLightbox();
+    }
+  });
+});
