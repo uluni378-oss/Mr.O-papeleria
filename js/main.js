@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.getElementById("image-lightbox");
   const lightboxImage = document.getElementById("image-lightbox-img");
   const lightboxTitle = document.getElementById("image-lightbox-title");
-  const lightboxTriggers = document.querySelectorAll(".web-preview");
+  const lightboxTriggers = document.querySelectorAll(".web-preview, .business-design-preview");
   const lightboxCloseButtons = document.querySelectorAll("[data-lightbox-close]");
 
   let lastFocusedElement = null;
@@ -314,4 +314,24 @@ document.addEventListener("DOMContentLoaded", () => {
       closeLightbox();
     }
   });
+});
+
+// BUSINESS DESIGN REVEAL OBSERVER
+document.addEventListener("DOMContentLoaded", () => {
+  const businessRevealElements = document.querySelectorAll(".business-design-reveal");
+  if(businessRevealElements.length > 0) {
+    const businessRevealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    
+    businessRevealElements.forEach((el, index) => {
+      el.style.transitionDelay = `${index * 80}ms`;
+      businessRevealObserver.observe(el);
+    });
+  }
 });

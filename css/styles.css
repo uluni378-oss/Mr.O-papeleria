@@ -1048,10 +1048,12 @@ main > section[id],
 }
 
 .hero-photo img {
+  display: block;
   width: 100%;
   aspect-ratio: 1200 / 620;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  object-position: 48% 50%;
 }
 
 .category-art {
@@ -4267,4 +4269,84 @@ body.lightbox-open {
 
 .image-lightbox.has-error .image-lightbox__media img {
   display: none;
+}
+
+/* --- Business Design Styles --- */
+.business-card__media {
+  position: relative;
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  background: #eef2f4;
+  margin: 0;
+}
+
+.business-card__media img {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.business-card:hover .business-card__media img {
+  transform: scale(1.035);
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.business-design-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.business-design-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .business-design-reveal,
+  .business-card,
+  .business-card img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.business-design-preview {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.business-design-preview__zoom {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  display: grid;
+  width: 2.35rem;
+  height: 2.35rem;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(4, 28, 46, 0.82);
+  color: #ffffff;
+  opacity: 0.85;
+  backdrop-filter: blur(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.business-design-preview:hover .business-design-preview__zoom,
+.business-design-preview:focus-visible .business-design-preview__zoom {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+.business-design-preview:focus-visible {
+  outline: 3px solid #00a6c8;
+  outline-offset: 4px;
 }
