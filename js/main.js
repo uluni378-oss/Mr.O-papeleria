@@ -335,3 +335,42 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// BUSINESS DESIGN REVEAL OBSERVER
+document.addEventListener("DOMContentLoaded", () => {
+  const businessRevealElements = document.querySelectorAll(".business-design-reveal");
+  if(businessRevealElements.length > 0) {
+    const businessRevealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    
+    businessRevealElements.forEach((el, index) => {
+      el.style.transitionDelay = `${index * 80}ms`;
+      businessRevealObserver.observe(el);
+    });
+  }
+});
+
+// CATEGORY CARDS REVEAL OBSERVER
+document.addEventListener("DOMContentLoaded", () => {
+  const categoryCards = document.querySelectorAll(".category-card-reveal");
+  if(categoryCards.length > 0) {
+    const categoryObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+
+    categoryCards.forEach((card, index) => {
+      card.style.transitionDelay = `${index * 65}ms`;
+      categoryObserver.observe(card);
+    });
+  }
+});

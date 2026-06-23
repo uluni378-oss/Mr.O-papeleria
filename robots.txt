@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://uluni378-oss.github.io/Mr.O-papeleria/sitemap.xml

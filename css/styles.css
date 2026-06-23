@@ -606,7 +606,7 @@ main > section[id],
 }
 
 .section {
-  padding-block: clamp(46px, 6vw, 76px);
+  padding-block: clamp(3rem, 5vw, 5.5rem);
 }
 
 .section-head {
@@ -3695,12 +3695,20 @@ main > section[id],
 /* ------------------------------------- */
 
 .location-section {
-  padding-block: clamp(4rem, 7vw, 7rem);
+  height: auto;
+  min-height: 0;
+  margin-top: 0;
+  padding-top: clamp(2.5rem, 4vw, 4rem);
+  padding-bottom: clamp(3rem, 5vw, 5.5rem);
 }
 
 /* --- Web Section Styles --- */
 .web-section {
-  padding-block: clamp(4rem, 7vw, 6.5rem);
+  height: auto;
+  min-height: 0;
+  padding-top: clamp(3rem, 5vw, 5.5rem);
+  padding-bottom: clamp(2.5rem, 4vw, 4rem);
+  margin-bottom: 0;
   overflow: hidden;
 }
 
@@ -4349,4 +4357,145 @@ body.lightbox-open {
 .business-design-preview:focus-visible {
   outline: 3px solid #00a6c8;
   outline-offset: 4px;
+}
+
+/* --- Misión y Visión Styles --- */
+.mission-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 470px);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.mission-visual {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 470px;
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #f3eadb;
+  box-shadow: 0 20px 48px rgba(8, 39, 59, 0.12);
+}
+
+.mission-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 900px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-visual {
+    width: min(100%, 520px);
+  }
+}
+
+@media (max-width: 520px) {
+  .mission-visual {
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+
+.category-card__icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: #00a6c8;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(7, 54, 92, 0.16);
+}
+.category-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.category-icon {
+  display: grid !important;
+  place-items: center;
+}
+.category-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.category-card-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.52s ease, transform 0.52s ease;
+}
+
+.category-card-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(8, 39, 59, 0.14);
+}
+
+.category-card:hover img {
+  transform: scale(1.025);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-card-reveal,
+  .category-card,
+  .category-card img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.mission-vision {
+  padding-bottom: clamp(2.5rem, 4vw, 4rem);
+}
+.categories {
+  padding-top: clamp(2rem, 3vw, 3rem);
+  padding-bottom: clamp(2.5rem, 4vw, 4rem);
+}
+.school-season {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding-block: 2.75rem;
+  }
+  .section--compact {
+    padding-block: 2rem;
+  }
+}
+
+.location-header {
+  text-align: center;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+.location-header__badge {
+  display: inline-block;
+  background: rgba(0, 157, 186, 0.1);
+  color: #009dba;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 1.25rem;
+  border-radius: 100px;
+  text-transform: uppercase;
 }
