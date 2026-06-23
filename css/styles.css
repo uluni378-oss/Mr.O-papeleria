@@ -3964,12 +3964,14 @@ main > section[id],
 }
 
 .quick-services__grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
 .quick-service-card {
+  flex: 0 1 calc((100% - 3rem) / 4);
   overflow: hidden;
   min-width: 0;
   border-radius: 18px;
@@ -4056,20 +4058,20 @@ main > section[id],
   .quick-services__container {
     grid-template-columns: 1fr;
   }
-  .quick-services__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .quick-service-card {
+    flex-basis: calc((100% - 2rem) / 3);
   }
 }
 
 @media (max-width: 760px) {
-  .quick-services__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .quick-service-card {
+    flex-basis: calc((100% - 1rem) / 2);
   }
 }
 
 @media (max-width: 480px) {
-  .quick-services__grid {
-    grid-template-columns: 1fr;
+  .quick-service-card {
+    flex-basis: 100%;
   }
   .quick-services__cta {
     width: 100%;
@@ -4477,8 +4479,8 @@ body.lightbox-open {
 
 @media (max-width: 700px) {
   .section {
-    padding-block: 2.75rem;
-  }
+  padding-block: clamp(3rem, 5vw, 5.5rem);
+}
   .section--compact {
     padding-block: 2rem;
   }
@@ -4498,4 +4500,92 @@ body.lightbox-open {
   padding: 0.5rem 1.25rem;
   border-radius: 100px;
   text-transform: uppercase;
+}
+
+/* --- Hero & Mission Reveal Animations --- */
+.hero-reveal-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.hero-reveal-right {
+  opacity: 0;
+  transform: translateX(24px) scale(1.025);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.hero-reveal-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero-reveal-left.is-visible,
+.hero-reveal-right.is-visible,
+.hero-reveal-up.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.mission-reveal-left {
+  opacity: 0;
+  transform: translateX(-22px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.mission-reveal-right {
+  opacity: 0;
+  transform: translateX(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.mission-reveal-up {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.mission-reveal-left.is-visible,
+.mission-reveal-right.is-visible,
+.mission-reveal-up.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.mission-item span {
+  display: inline-block;
+  transform: scale(0.96);
+  transition: transform 0.6s ease;
+}
+.mission-reveal-left.is-visible span {
+  transform: scale(1);
+}
+
+.hero .btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+.hero .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-reveal-left,
+  .hero-reveal-right,
+  .hero-reveal-up,
+  .mission-reveal-left,
+  .mission-reveal-right,
+  .mission-reveal-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .mission-item span {
+    transform: none !important;
+    transition: none !important;
+  }
+  .hero .btn:hover {
+    transform: none !important;
+  }
 }

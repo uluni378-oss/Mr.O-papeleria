@@ -374,3 +374,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// HERO & MISSION OBSERVER
+document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll(
+    ".hero-reveal-left, .hero-reveal-right, .hero-reveal-up, " +
+    ".mission-reveal-left, .mission-reveal-right, .mission-reveal-up"
+  );
+
+  if (animatedElements.length > 0) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.16 }
+    );
+
+    animatedElements.forEach((element) => {
+      revealObserver.observe(element);
+    });
+  }
+});
