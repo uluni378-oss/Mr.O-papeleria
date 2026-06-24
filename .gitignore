@@ -1,1 +1,5 @@
 _cleanup_quarantine/
+_cleanup_quarantine_final/
+__pycache__/
+*.pyc
+*.log

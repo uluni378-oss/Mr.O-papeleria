@@ -1,0 +1,703 @@
+REPORTE DE DEPENDENCIAS
+==============================
+
+Archivo: .gitignore
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: .htaccess
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: apply_category_updates.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: apply_category_updates_v2.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: apply_corrections.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: apply_proper_refactor.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: apply_quick_action.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/copias-impresiones.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/diseno-grafico.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/diseno-negocios/impresos-promocionales-realistas.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/diseno-negocios/logotipos-realista.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/diseno-negocios/lonas-banners-realistas.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/diseno-negocios/lonas-banners-v2.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/diseno-negocios/papeleria-corporativa-realista.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/diseno-negocios/redes-sociales-realistas.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/diseno-negocios/tarjetas-presentacion-realistas.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/escaneo-documentos.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/escuela.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/hero-mro-papeleria.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/hero-papeleria.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/impresion-documentos.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/local/mision-vision-interior.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/logo-mro.jpg
+Clasificacion: ACTIVO
+Referenciado por: index.html, productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/mision-vision/mision-vision-integral.png
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/oficina.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/paginas-web.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/paginas-web/web-comercio.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/paginas-web/web-consultorio.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/paginas-web/web-negocio-local.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/paginas-web/web-profesionista.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/papeleria/banner-escolar-realista.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-colores.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-cuadernos.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-escritura.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-geometria.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-impresion-oficina.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-mochilas-estuches.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-organizacion.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-pegamentos-manualidades.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/productos-escolares/collage-regreso-clases-hero.webp
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-nuevos/copias-color.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-nuevos/engargolado.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-nuevos/enmicado.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-nuevos/impresion-planos.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-nuevos/impresiones.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-nuevos/mas-servicios.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-nuevos/recibo-cfe.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-nuevos/talones-issste.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-principales/articulos-oficina.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-principales/copias-impresiones.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-principales/diseno-negocios.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-principales/material-escolar.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-principales/paginas-web.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-principales/tramites-documentos.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/actas-nacimiento.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/copias-blanco-negro.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/copias-color.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/curp-documento.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/digitalizacion.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-rapidos/engargolado.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/enmicado.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/escaneo-documentos.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/impresion-documentos.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/impresion-planos.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios-rapidos/mas-servicios.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/recibo-cfe.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios-rapidos/talones-issste.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/img/servicios/copias-color.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios/engargolado.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios/enmicado.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios/impresiones.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios/mas-servicios.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios/planos.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios/recibo-cfe.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/servicios/talones-issste.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/social/mro-papeleria-og.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/temporada-escolar-fondo.svg
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/tramites.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/img/ubicacion/servicios-mro.webp
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: assets/mro-servicios/mro_01_logotipos_mockup.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/mro-servicios/mro_02_tarjetas_presentacion.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/mro-servicios/mro_03_lonas_banners.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/mro-servicios/mro_04_redes_sociales.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/mro-servicios/mro_05_papeleria_corporativa.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: assets/mro-servicios/mro_06_impresos_promocionales.webp
+Clasificacion: POSIBLE SOBRANTE
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: audit_dependencies.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: clean_css.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: clean_newlines.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: cleanup-report.json
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: cleanup-report.md
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: css/productos-escolares.css
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: css/styles.css
+Clasificacion: ACTIVO
+Referenciado por: index.html, productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: delete_planos.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: docs/auditoria-comercial-visual.md
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: docs/inventario-fotografias-productos.md
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: docs/productos-sin-fotografia.md
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: fix_css.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: fix_desc.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: fix_html.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: fix_lightbox.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: fix_lonas.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: fix_media.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: fix_missing_letters.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: fix_spacing.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: generate_web_screenshots.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: index.html
+Clasificacion: ACTIVO
+Referenciado por: productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: js/main.js
+Clasificacion: ACTIVO
+Referenciado por: index.html, productos-escolares.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: print_html.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: print_quick.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: process_business_images.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: process_images_v2.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: process_new_images.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: productos-escolares.html
+Clasificacion: ACTIVO
+Referenciado por: index.html
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: refactor_cards.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: remove_action_buttons.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: restore_img.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: restore_mision.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: restore_script.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: robots.txt
+Clasificacion: ACTIVO
+Referenciado por: Ninguno
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: sitemap.xml
+Clasificacion: ACTIVO
+Referenciado por: Ninguno
+Destino propuesto: Copiar a public_html
+------------------------------
+Archivo: strip_padding.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_business_css.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_business_html.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_css_action.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_css_size.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_diseno_negocios.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_fase4.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_footer_css.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_footer_html.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_hero_mision.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_hero_web.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_html.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_html_seo.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_html_v2.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_js.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_mision_img.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_quick.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_social_css.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_social_html.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
+Archivo: update_socials.py
+Clasificacion: TEMPORAL
+Referenciado por: Ninguno
+Destino propuesto: _cleanup_quarantine_final
+------------------------------
